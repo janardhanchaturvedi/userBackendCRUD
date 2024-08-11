@@ -8,7 +8,7 @@ Description: This endpoint allows a new user to register by providing their name
 Request Body:
 
 json
-Copy code
+
 {
   "name": "John Doe",
   "email": "john.doe@example.com",
@@ -19,7 +19,7 @@ Response:
 201 Created
 
 json
-Copy code
+
 {
   "message": "User Created Successfully",
   "data": {
@@ -33,14 +33,14 @@ Copy code
 400 Bad Request
 
 json
-Copy code
+
 {
   "message": "User Already Exists"
 }
 500 Internal Server Error
 
 json
-Copy code
+
 {
   "message": "An error occurred",
   "error": "error_message_here"
@@ -55,7 +55,7 @@ Description: This endpoint allows an existing user to log in by providing their 
 Request Body:
 
 json
-Copy code
+
 {
   "email": "john.doe@example.com",
   "password": "securepassword123"
@@ -65,7 +65,7 @@ Response:
 201 Created
 
 json
-Copy code
+
 {
   "message": "User LoggedIn Successfully",
   "data": {
@@ -79,14 +79,14 @@ Copy code
 400 Bad Request
 
 json
-Copy code
+
 {
   "message": "User Doesn't Exist"
 }
 500 Internal Server Error
 
 json
-Copy code
+
 {
   "message": "Please Enter the Correct Password"
 }
